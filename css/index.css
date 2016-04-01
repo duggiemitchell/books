@@ -1,0 +1,116 @@
+body {
+    font-family: Arial;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid {
+  width: 100%;
+}
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+.grid-pad > [class*='one-']:last-of-type {
+  padding-right: 20px;
+}
+.grid:after {
+  content:" ";
+  display: table;
+  clear: both;
+}
+[.class*='*-*-col'] {
+  float: left;
+  padding-right: 20px;
+}
+[.class*='*-*-col']:last-of-type {
+  padding-right:0;
+}
+.one-fourth-col {
+  width: 25%;
+}
+/***********Navigation************/
+
+.portfolioFilter {
+  text-align: center;
+
+}
+.portfolioFilter a {
+    margin-right: 10px;
+    color:#666;
+    text-decoration:none;
+    display: inline;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.portfolioFilter a.current {
+    font-weight:bold;
+    color: #F22613;
+    border-bottom: 2px solid;
+}
+
+.portfolioContainer {
+  width: 60%;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right:auto;}
+img {
+    margin: 20px;
+    width: auto;
+    height: 250px;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/**************** MEDIA QUERIES **************/
+
+@media only screen and (max-width: 640px) {
+  .one-fourth-col { width: 100%; }
+  .one-fourth-col { width: 100%; }
+  .one-fourth-col { width: 100%; }
+  .one-fourth-col { width: 100%; }
+}
+@media only screen and (max-width : 1050px) and (min-width : 641px) {
+  .one-fourth-col { width: 50%; }
+  .one-fourth-col { width: 50%; }
+  .one-fourth-col { width: 50%; }
+  .one-fourth-col { width: 50%; }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+  .one-fourth-col { width: 33.33%; }
+  .one-fourth-col { width: 33.33%; }
+  .one-fourth-col { width: 33.33%; }
+  .one-fourth-col { width: 33.33%; }
+}
+@media only screen (min-width : 1291px) {
+  .one-fourth-col { width: 25%; }
+  .one-fourth-col { width: 25%; }
+  .one-fourth-col { width: 25%; }
+  .one-fourth-col { width: 25%; }
+}
