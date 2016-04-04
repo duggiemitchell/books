@@ -1,10 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
 body {
-    font-family: Arial;
+  font-family: 'Merriweather Sans';
+  font-size: 1vw;
+  margin: 0;
+
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 1vw;
 }
 .grid {
   width: 100%;
@@ -32,11 +46,11 @@ body {
 }
 /***********Navigation************/
 
-.portfolioFilter {
+.categoryFilter {
   text-align: center;
 
 }
-.portfolioFilter a {
+.categoryFilter a {
     margin-right: 10px;
     color:#666;
     text-decoration:none;
@@ -45,23 +59,41 @@ body {
     text-transform: uppercase;
 }
 
-.portfolioFilter a.current {
+.categoryFilter a.current {
     font-weight:bold;
     color: #F22613;
     border-bottom: 2px solid;
 }
 
-.portfolioContainer {
+.categoryContainer {
   width: 60%;
   max-width: 60%;
   margin-left: auto;
-  margin-right:auto;}
-img {
+  margin-right:auto;
+  word-wrap: break-word;
+}
+.categoryContainer img {
     margin: 20px;
     width: auto;
-    height: 250px;
+    height: 300px;
+}
+.categoryContainer p  {
+  margin: 0;
+  padding: 0 40px 0 20px;
 }
 
+.categoryContainer  .view  {
+    cursor: pointer;
+    display: block;
+    color: #F22613;
+}
+.categoryContainer
+span.view {
+  margin-top: 5px;
+  color: #F22613;
+}
+/*************ISOTOPE STYLE RULES************/
+/********************************************/
 .isotope-item {
     z-index: 2;
 }
@@ -89,12 +121,15 @@ img {
 }
 
 /**************** MEDIA QUERIES **************/
+/*********************************************/
 
 @media only screen and (max-width: 640px) {
   .one-fourth-col { width: 100%; }
   .one-fourth-col { width: 100%; }
   .one-fourth-col { width: 100%; }
   .one-fourth-col { width: 100%; }
+  body { font-size: 10px; }
+  p { font-size: 10px; }
 }
 @media only screen and (max-width : 1050px) and (min-width : 641px) {
   .one-fourth-col { width: 50%; }
