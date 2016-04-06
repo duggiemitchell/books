@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- testing file -->
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,20 +8,22 @@
   <title>Movement Mortgage Books</title>
   <meta property="og:title" content="Movement Mortgage Books" />
   <link rel="stylesheet" href="css/index.css" />
+  <link href="booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+
   <!-- <link rel="stylesheet" href="css/grid.css" /> -->
 
 
 
 <body>
 <!--  -->
-<div class="grid categoryFilter">
+<nav class="grid categoryFilter">
   <a href="#" disabled>Filter:</a>
   <a href="#" data-filter="*" class="current">All</a>
   <a href="#" data-filter=".consumer">consumer reports</a>
   <a href="#" data-filter=".transactional">transactional</a>
   <a href="#" data-filter=".financial">financial</a>
   <a href="#" data-filter=".industry">industry white papers</a>
-</div>
+</nav>
 
 <section class="grid categoryContainer">
   <div class="financial one-fourth-col">
@@ -82,11 +85,39 @@
   </div>
 
 </section>
+<!-- USE CLASS FOR SHARED FUNCTIONALITY AMONGST BOOKS.  DIRECT CHILDREN IS A SLIDE -->
+<div class="readBook">
+    <div>
+        <h3>Yay, Page 1!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 2!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 3!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 4!</h3>
+    </div>
+</div>
 
+<footer>
+
+<hr class="is-left">
+<hr class="is-right">
+<img src="images/mmlogo-logo.png" />
+
+</footer>
+<!-- Bookletjs -->
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://mfzy.co/isotope.pkgd.js"></script>
-<script src="http://www.turnjs.com/lib/turn.min.js"></script>
+<!-- <script src="http://www.turnjs.com/lib/turn.min.js"></script> -->
+<!-- Booklet -->
+<script src="booklet/jquery.easing.1.3.js"></script>
+<script src="booklet/jquery.booklet.latest.min.js"></script>
+<!-- MAIN JS FILE -->
 <script src="js/index.js"></script>
+<script src="js/page-view.js"></script>
 </html>
 </body>
